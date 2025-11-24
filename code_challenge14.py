@@ -10,24 +10,25 @@ student_record = {}
 
 while True:
 
-    print("A - add student record")
-    print("B - print all student record")
-    print("C - search student record")
-    print("D - delete student record")
-    print("E - edit student record")
-    print("F - export student record")
-    print("G - exit system")
+    print("A - add student record ")
+    print("B - print all student record ")
+    print("C - search student record ")
+    print("D - delete student record ")
+    print("E - edit student record ")
+    print("F - export student record ")
+    print("G - import student record ")
+    print("X - sytem Exit ")
 
     choice = input("select from the action above---->").lower()
 
     if choice == 'a':
         os.system('cls')
         print("\nAdding student record")
-        id_no = input("please input your student id number")
-        first_name = input("please input your first name")
-        last_name = input("please input your last name")
-        age = eval(input("please input your age"))
-        section = input("please input your section")
+        id_no = input("please input your student id number ")
+        first_name = input("please input your first name ")
+        last_name = input("please input your last name ")
+        age = eval(input("please input your age "))
+        section = input("please input your section ")
 
         student_record[id_no] = [first_name,last_name,age,section]
         print("DATA SAVED SUCCESSFULLY")
@@ -102,7 +103,7 @@ while True:
             student_record[search_id][1] = second_name
             student_record[search_id][2] = age
             student_record[search_id][3] = course
-            student_record[search_id][4] = section         
+            student_record[search_id][4] = section  
             
             print("RECORD UPDATED")
 
@@ -112,7 +113,7 @@ while True:
         continue
     elif choice == 'f':
         os.system('cls')
-        print("EXPORT STUDENT DATA ")
+        print("EXPORT STUDENT DATA ")# ita transfer ang data
         #json java script object notation
 
         with open('student_records.json', 'w') as new_file:
@@ -121,7 +122,17 @@ while True:
         print("\n\nDATA EXPORTED TO JSON")
         continue
     elif choice == 'g':
-        print("Exit system")
+        os.system('cls')
+        print("import student data ") #ilalagay ang data 
+        # R- means read and W- means write
+        with open('student_records.json', 'r') as new_file:
+            import_student = json.load(new_file)
+
+        student_record = import_student
+        print("\n\nDATA AY NAIMPORT NA")
+        continue
+    elif choice == 'x':
+        print("SYSTEM ALIS")    
         break
     else:
         print("INVALID CHOICE, RE ENTER YOUR CHOICE")
