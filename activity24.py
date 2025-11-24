@@ -5,15 +5,18 @@
 #keyword -- def
 #dont use space 
 
-from activity24_1.py import Mrchair,Mrchairname
-
+from activity24_1 import MrTable, Mrgwapo
 
 def Mrchair ():
     print("yow pre!!!!")
     print("kamusta ka?")
 
 Mrchair()
-Mrchair(name,loc,age)
-Mrchair(Mar,Cotta,18)
+MrTable('Mar')
+Mrgwapo('Mar','Cotta','18')
+
+while True:
+    print('')
+
 
 
