@@ -73,12 +73,12 @@ def basic_output():
     print("This is an Example of Simple printing\n")
     print("Input:")
     print('print("Hello World!")')
-    print('print("Bonjour!")')
+    print('print("Konichiwa!")')
     print('print("Ni Hao")')
     print()
     print("Output:")
     print("Hello World!")
-    print("Bonjour!")
+    print("konichiwa!")
     print("Ni Hao!\n")
     print("---------------------------------------")
     clear= input("Enter any character:")
@@ -114,15 +114,15 @@ def join_vars():
     print("-----------------------------------------------------")
     clear= input("Enter any character:")
 
-def tuple_demo():
+def grade_demo():
     print("---------------------------------\n")
     print("Input:")
-    print("my_tuple = (1, 2, 3, 4)")
-    print('print(f"Tuple: {my_tuple}")')
+    print("my_grade = (1, 2, 3, 4)")
+    print('print(f"grade: {my_grade}")')
     print()
     print("Output:")
-    my_tuple = (1, 2, 3, 4)
-    print(f"Tuple: {my_tuple}")
+    my_grade = (1, 2, 3, 4)
+    print(f"grade: {my_grade}")
     print("---------------------------------2")
     clear= input("Enter any character:")
 
@@ -826,7 +826,7 @@ def menu_vars():
         print("A variable is a name that is used to refer to a value \nstored in memory. You can think of a variable as a container \nfor storing data values. Variables allow you to store, modify,\nand access data throughout your program.")
         print("----------------------------------")
         print(" 1. Concatenation with Variables")
-        print(" 2. Tuple")
+        print(" 2. Grade")
         print(" 0. Back To Main Menu")
         print("-----------------------------------------------------")
         print("")
@@ -836,7 +836,7 @@ def menu_vars():
             join_vars()
             os.system('cls')
         elif choice == '2':
-            tuple_demo()
+            grade_demo()
             os.system('cls')
         elif choice == '0':
             quick_anim()
