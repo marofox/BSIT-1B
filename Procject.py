@@ -1080,7 +1080,7 @@ demo_progress()
 print(f"Starting Program Please Wait ")
 intro_anim()
 print("--------------------------------------------------")
-print("  Welcome To Laspinas Code  ")
+print("  Welcome To Las print("  Welcome To Las Piñas Code  ")
 print("--------------------------------------------------")
 make_acc_choice = input("Do you want to create a new account? (yes/no): ")
 print("--------------------------------------------------")
@@ -1101,3 +1101,4 @@ else:
     print("--------------------------------------------------")
     print("Thank you for using my system!")
     print("--------------------------------------------------")
+
